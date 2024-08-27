@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
+
+:root {
+  --black: #0e0c0c;
+  --blue: #0088b8;
+  --red: #e11b20;
+  --yellow: #fccd06;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Goldman";
+  background-color: var(--black);
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+#web_logo {
+  width: 5%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+
+.navbar {
+  display: flex;
+  gap: 2.5em;
+}
+
+.navbar a {
+  font-size: 0.8em;
+}
+
+.link:nth-of-type(3n + 1) a {
+  color: var(--blue);
+}
+
+.link:nth-of-type(3n + 2) a {
+  color: var(--red);
+}
+
+.link:nth-of-type(3n + 0) a {
+  color: var(--yellow);
+}
+
+.jobs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs .job:nth-of-type(1) {
+  color: var(--yellow);
+}
+
+.jobs .job:nth-of-type(2) {
+  color: var(--red);
+}
+
+.jobs .job:nth-of-type(3) {
+  color: var(--blue);
+}
+
+.move {
+  display: flex;
+  gap: 4em;
+  white-space: nowrap;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 5.2em;
+}
+
+.name span:nth-of-type(1) {
+  color: var(--yellow);
+}
+
+.name span:nth-of-type(2) {
+  color: var(--red);
+}
+
+.name span:nth-of-type(3) {
+  color: var(--blue);
+}
+
+/* ABOUT ME SECTION */
+#about_me * {
+  color: var(--blue);
+}
+
+/* EXPERIENCE SECTION */
+#experience * {
+  color: var(--red);
+}
+
+/* SKILLS SECTION */
+#skills {
+  color: var(--yellow);
+}
+
+/* PROJECTS SECTION */
+#projects {
+  color: var(--blue);
+}
+
+/* CONTACT ME SECTION */
+#contact_me {
+  color: var(--red);
+}
+
+/* MORE SECTION */
+#more {
+  color: var(--yellow);
+}
+
+/* LOADING ANIMATION DESIGN */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.yellow {
+  background-color: var(--yellow);
+  color: var(--red);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.counter {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  height: 100px;
+  font-size: 100px;
+  line-height: 102px;
+  clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
+  font-weight: 400;
+}
+
+.counter-1,
+.counter-2,
+.counter-3 {
+  position: relative;
+  top: 0px;
+}
+
+.num1offset1,
+.num1offset2,
+.num1offset3 {
+  position: relative;
+  right: -30px;
+}
