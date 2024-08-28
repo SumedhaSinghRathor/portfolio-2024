@@ -41,29 +41,19 @@ img {
   width: 100%;
 }
 
-#web_logo {
-  width: 5%;
+div {
+  border: 1px solid;
 }
 
-.cursor {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  margin-left: -25px;
-  margin-top: -25px;
-  border-radius: 50%;
-  border: 1px solid white;
-  transition: transform 0.2s ease;
-  transform-origin: center center;
-  pointer-events: none;
-  z-index: 100;
+#web_logo {
+  width: 5%;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 .navbar {
@@ -142,6 +132,26 @@ img {
 
 #about_me {
   display: flex;
+  gap: 2em;
+  padding: 50px;
+}
+
+.about {
+  height: auto;
+  width: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about p {
+  font-size: larger;
+}
+
+.pfp {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 /* EXPERIENCE SECTION */
