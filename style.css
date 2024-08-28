@@ -227,7 +227,6 @@ div {
 #contact_me i {
   color: var(--red);
   height: 100%;
-  transition: 0.3s;
 }
 
 #contact_me div {
