@@ -223,6 +223,16 @@ div {
 /* MORE SECTION */
 #more {
   color: var(--yellow);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.more {
+  font-size: 25em;
+  font-weight: none;
 }
 
 /* LOADING ANIMATION DESIGN */
