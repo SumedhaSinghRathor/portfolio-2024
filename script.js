@@ -38,7 +38,7 @@ var load_animation = gsap.timeline();
 load_animation.to(".digit", {
   top: "-150px",
   stagger: {
-    amount: -0.25,
+    amount: 0.25,
   },
   delay: 6,
   duration: 1,
