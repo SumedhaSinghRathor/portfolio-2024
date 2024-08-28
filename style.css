@@ -45,11 +45,25 @@ img {
   width: 5%;
 }
 
+.cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: transform 0.2s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 100;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .navbar {
@@ -124,6 +138,10 @@ img {
 /* ABOUT ME SECTION */
 #about_me * {
   color: var(--blue);
+}
+
+#about_me {
+  display: flex;
 }
 
 /* EXPERIENCE SECTION */

@@ -46,7 +46,6 @@ load_animation.to(".digit", {
 });
 
 load_animation.to(".loading-screen", {
-  //   transform: "translateY(-100vh)",
   height: "0px",
   duration: 0.3,
   delay: 0.1,
@@ -62,7 +61,7 @@ load_animation.from("#web_logo", {
 load_animation.from(".link", {
   y: -60,
   opacity: 0,
-  delay: 0.3,
+  delay: 0.1,
   stagger: -0.1,
 });
 
@@ -70,11 +69,11 @@ load_animation.from(".marquee", {
   y: 100,
   opacity: 0,
   delay: 0.1,
-  stagger: -0.05,
+  stagger: -0.1,
 });
 
 load_animation.from(".job", {
   y: 50,
   opacity: 0,
-  stagger: 0.2,
+  stagger: -0.2,
 });
