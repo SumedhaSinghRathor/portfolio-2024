@@ -41,8 +41,12 @@ img {
   width: 100%;
 }
 
+i {
+  color: var(--black);
+}
+
 div {
-  border: 1px solid;
+  border: 1px solid white;
 }
 
 #web_logo {
@@ -53,7 +57,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid white;
 }
 
 .navbar {
@@ -166,7 +169,50 @@ div {
 
 /* PROJECTS SECTION */
 #projects {
-  color: var(--blue);
+  color: var(--black);
+}
+
+.projects {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.project {
+  width: 275px;
+}
+
+.project-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid var(--blue);
+}
+
+.project-desc {
+  background-color: var(--blue);
+  color: 2px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live {
+  display: flex;
+  gap: 0.5em;
+}
+
+.head,
+.foot {
+  padding: 5px;
+}
+
+.madewith {
+  font-size: 14px;
 }
 
 /* CONTACT ME SECTION */
