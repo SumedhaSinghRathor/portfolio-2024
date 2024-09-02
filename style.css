@@ -258,6 +258,7 @@ div {
   background-color: var(--red);
   color: var(--black);
   border: 3px solid var(--red);
+  z-index: 10000;
 }
 
 /* MORE SECTION */
