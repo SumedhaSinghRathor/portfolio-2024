@@ -3,3 +3,7 @@ This is a markdown testing file.
 ## Heading with two hash
 ### Heading with three hash
 #### Heading with four hash
+
+```sh
+does a code block look like this?
+```
