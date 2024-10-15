@@ -240,25 +240,52 @@ div {
 /* CONTACT ME SECTION */
 #contact_me {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  color: var(--red);
+}
+
+#contact_me a {
+  color: var(--red);
+}
+
+#contact_me .contacts {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#contact_me i {
-  background-color: var(--black);
+#contact_me .contacts i {
   color: var(--red);
+  background-color: var(--black);
   border: 3px solid var(--red);
   border-radius: 50%;
-  padding: 40px;
+  padding: 50px;
   margin: 0 -15px;
   transition: ease-in 0.1s;
+  font-size: 150px;
 }
 
-#contact_me i:hover {
+#contact_me .contacts i:hover {
   background-color: var(--red);
   color: var(--black);
   border: 3px solid var(--red);
-  z-index: 10000;
+}
+
+.downloadResume {
+  font-size: 30px;
+  border: 3px solid var(--red);
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  transition: ease-in 0.1s;
+}
+
+.downloadResume:hover {
+  color: var(--black);
+  background-color: var(--red);
 }
 
 /* MORE SECTION */
