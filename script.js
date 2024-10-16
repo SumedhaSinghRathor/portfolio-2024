@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   animate(document.querySelector(".counter-1"), 2, 4);
 });
 
-var load_animation = gsap.timeline();
+let load_animation = gsap.timeline();
 
 load_animation.to(".digit", {
   top: "-150px",
