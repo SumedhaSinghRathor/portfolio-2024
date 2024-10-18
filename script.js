@@ -1,3 +1,4 @@
+// Counter Animation
 document.addEventListener("DOMContentLoaded", function () {
   const counter3 = document.querySelector(".counter-3");
 
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   animate(document.querySelector(".counter-1"), 2, 4);
 });
 
+// Loading Animation
 let load_animation = gsap.timeline();
 
 load_animation.to(".digit", {
