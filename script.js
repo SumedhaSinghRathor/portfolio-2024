@@ -79,3 +79,41 @@ load_animation.from(".job", {
   opacity: 0,
   stagger: -0.2,
 });
+
+// Cursor Animation
+let website_content = document.querySelector(".website-content");
+let cursor = document.querySelector(".cursor");
+
+website_content.addEventListener("click", function (dets) {
+  gsap.to(cursor, {
+    x: dets.x,
+    y: dets.y,
+    duration: 1,
+  });
+});
+
+// Active Section
+// let sections = document.querySelectorAll("section");
+// let navLinks = document.querySelectorAll(
+//   ".website-content .nav .navbar .link a"
+// );
+
+// window.onscroll = () => {
+//   sections.forEach((sec) => {
+//     let top = window.scrollY;
+//     let offset = sec.offsetTop;
+//     let height = sec.offsetHeight;
+//     let id = sec.getAttribute("id");
+
+//     if (top >= offset && top < offset + height) {
+//       navLinks.forEach((links) => {
+//         links.classList.remove("active");
+//         document
+//           .querySelector(
+//             ".website-content .nav .navbar .link a[href*=" + id + "]"
+//           )
+//           .classList.add("active");
+//       });
+//     }
+//   });
+// };
