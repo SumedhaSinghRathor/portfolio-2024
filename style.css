@@ -182,6 +182,7 @@ i {
   flex-direction: column;
   gap: 3em;
   border: 1px solid var(--yellow);
+  justify-content: center;
 }
 
 .skills {
