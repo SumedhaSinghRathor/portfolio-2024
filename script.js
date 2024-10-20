@@ -93,6 +93,20 @@ website_content.addEventListener("mousemove", function (dets) {
   });
 });
 
+let a = document.getElementsByTagName("a");
+
+a.addEventListener("mouseenter", function () {
+  gsap.to(cursor, {
+    scale: 1.5,
+  });
+});
+
+a.addEventListener("mouseleave", function () {
+  gsap.to(cursor, {
+    scale: 1,
+  });
+});
+
 // Active Section
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".link a");
