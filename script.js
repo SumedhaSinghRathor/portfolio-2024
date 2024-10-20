@@ -93,38 +93,29 @@ website_content.addEventListener("mousemove", function (dets) {
   });
 });
 
-let a = document.getElementsByTagName("a");
+// let links = document.getElementsByTagName("a");
 
-a.addEventListener("mouseenter", function () {
-  gsap.to(cursor, {
-    scale: 1.5,
-  });
+// links.addEventListener("mouseenter", function () {
+//   gsap.to(cursor, {
+//     scale: 1.5,
+//   });
+// });
+
+// links.addEventListener("mouseleave", function () {
+//   gsap.to(cursor, {
+//     scale: 1,
+//   });
+// });
+
+// Project Animation
+gsap.to(".projects", {
+  transform: "translateX(-54%)",
+  scrollTrigger: {
+    markers: true,
+    trigger: "#projects",
+    scroller: "body",
+    scrub: 2,
+    pin: true,
+    ease: "none",
+  },
 });
-
-a.addEventListener("mouseleave", function () {
-  gsap.to(cursor, {
-    scale: 1,
-  });
-});
-
-// Active Section
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll(".link a");
-
-window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
-
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector(".link a[href*=" + id + "]")
-          .classList.add("active");
-      });
-    }
-  });
-};
