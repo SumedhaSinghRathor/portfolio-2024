@@ -150,6 +150,7 @@ i {
   display: flex;
   gap: 2em;
   padding: 50px;
+  border: 1px solid var(--blue);
 }
 
 .about {
@@ -173,6 +174,10 @@ i {
 /* EXPERIENCE SECTION */
 #experience * {
   color: var(--red);
+}
+
+#experience {
+  border: 1px solid var(--red);
 }
 
 /* SKILLS SECTION */
@@ -224,6 +229,7 @@ i {
 #projects {
   color: var(--black);
   align-items: end;
+  border: 1px solid var(--blue);
 }
 
 .projects {
@@ -279,6 +285,7 @@ i {
   justify-content: center;
   gap: 5em;
   color: var(--red);
+  border: 1px solid var(--red);
 }
 
 #contact_me a {
@@ -329,6 +336,7 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: end;
+  border: 1px solid var(--yellow);
 }
 
 .clickfor {
