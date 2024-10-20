@@ -84,19 +84,18 @@ load_animation.from(".job", {
 let website_content = document.querySelector(".website-content");
 let cursor = document.querySelector(".cursor");
 
-website_content.addEventListener("click", function (dets) {
+website_content.addEventListener("mousemove", function (dets) {
   gsap.to(cursor, {
-    x: dets.x,
-    y: dets.y,
-    duration: 1,
+    x: dets.x - 25,
+    y: dets.y - 25,
+    duration: 0.7,
+    ease: "power4.out",
   });
 });
 
 // Active Section
 let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll(
-  ".website-content .nav .navbar .link a"
-);
+let navLinks = document.querySelectorAll(".link a");
 
 window.onscroll = () => {
   sections.forEach((sec) => {
@@ -109,9 +108,7 @@ window.onscroll = () => {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
-          .querySelector(
-            ".website-content .nav .navbar .link a[href*=" + id + "]"
-          )
+          .querySelector(".link a[href*=" + id + "]")
           .classList.add("active");
       });
     }
