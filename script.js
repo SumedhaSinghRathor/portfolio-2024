@@ -93,25 +93,11 @@ website_content.addEventListener("mousemove", function (dets) {
   });
 });
 
-// let links = document.getElementsByTagName("a");
-
-// links.addEventListener("mouseenter", function () {
-//   gsap.to(cursor, {
-//     scale: 1.5,
-//   });
-// });
-
-// links.addEventListener("mouseleave", function () {
-//   gsap.to(cursor, {
-//     scale: 1,
-//   });
-// });
-
 // Project Animation
 gsap.to(".projects", {
-  transform: "translateX(-54%)",
+  transform: "translateX(-54.8%)",
   scrollTrigger: {
-    markers: true,
+    markers: false,
     trigger: "#projects",
     scroller: "body",
     scrub: 2,
