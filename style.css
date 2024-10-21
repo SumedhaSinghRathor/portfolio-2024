@@ -30,7 +30,6 @@ body {
 
 .website-content {
   width: 100%;
-  height: fit-content;
   overflow: hidden;
 }
 
@@ -351,6 +350,10 @@ i {
 .clickfor {
   font-size: 80px;
   line-height: 70%;
+}
+
+.more a {
+  color: var(--yellow);
 }
 
 .more h1 {

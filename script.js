@@ -99,14 +99,15 @@ for (let a of anchors) {
   a.addEventListener("mouseenter", function () {
     gsap.to(cursor, {
       scale: 1.5,
-      ease: "expo.inOut",
+      ease: "power4.inOut",
+      borderStyle: "double",
     });
   });
 
   a.addEventListener("mouseleave", function () {
     gsap.to(cursor, {
       scale: 1,
-      ease: "expo.inOut",
+      ease: "power4.inOut",
     });
   });
 }
