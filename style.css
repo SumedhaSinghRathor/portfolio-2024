@@ -309,20 +309,21 @@ i {
 #contact_me .contacts i {
   color: var(--red);
   background-color: var(--black);
-  border: 3px solid var(--red);
+  border: 2px solid var(--red);
   border-radius: 50%;
   padding: 30px;
-  margin: 0 -10px;
+  margin: 0 -7px;
   transition: ease-in 0.1s;
 }
 
 #contact_me .contacts i:hover {
   background-color: var(--red);
   color: var(--black);
+  top: -10px;
 }
 
 .downloadResume {
-  font-size: 25px;
+  font-size: 20px;
   border: 3px solid var(--red);
   padding: 15px 55px;
   display: flex;
