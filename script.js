@@ -124,3 +124,29 @@ gsap.to(".projects", {
     ease: "none",
   },
 });
+
+// Marquee Animation
+gsap.to(".move", {
+  transform: "translateX(-150%)",
+  repeat: -1,
+  duration: 8,
+  ease: "none",
+});
+
+window.addEventListener("wheel", function (dets) {
+  if (dets.deltaY >= 0) {
+    gsap.to(".move", {
+      transform: "translateX(-150%)",
+      repeat: -1,
+      duration: 8,
+      ease: "none",
+    });
+  } else {
+    gsap.to(".move", {
+      transform: "translateX(0%)",
+      repeat: -1,
+      duration: 8,
+      ease: "none",
+    });
+  }
+});
