@@ -68,6 +68,20 @@ load_animation.from(".link", {
   stagger: -0.1,
 });
 
+// Hero Section Animation
+load_animation.from(".marquee", {
+  y: 100,
+  opacity: 0,
+  delay: 0.1,
+  stagger: -0.1,
+});
+
+load_animation.from(".job", {
+  y: 50,
+  opacity: 0,
+  stagger: -0.2,
+});
+
 // Cursor Animation
 let website_content = document.querySelector(".website-content");
 let cursor = document.querySelector(".cursor");

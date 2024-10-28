@@ -24,6 +24,22 @@ body {
   box-sizing: border-box;
 }
 
+section {
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
+img {
+  width: 100%;
+}
+
 .website-content {
   width: 100%;
   overflow: hidden;
@@ -72,6 +88,55 @@ body {
 
 .link:nth-of-type(3n + 0) a {
   color: var(--yellow);
+}
+
+/* LANDING SECTION */
+.jobs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs .job:nth-of-type(1) {
+  color: var(--yellow);
+}
+
+.jobs .job:nth-of-type(2) {
+  color: var(--red);
+}
+
+.jobs .job:nth-of-type(3) {
+  color: var(--blue);
+}
+
+.move {
+  display: flex;
+  gap: 4em;
+  white-space: nowrap;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.name {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 5.2em;
+}
+
+.name span:nth-of-type(1) {
+  color: var(--yellow);
+}
+
+.name span:nth-of-type(2) {
+  color: var(--red);
+}
+
+.name span:nth-of-type(3) {
+  color: var(--blue);
 }
 
 /* PRELOADER ANIMATION */
