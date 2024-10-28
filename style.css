@@ -139,6 +139,36 @@ img {
   color: var(--blue);
 }
 
+/* ABOUT ME SECTION */
+#about_me * {
+  color: var(--blue);
+}
+
+#about_me {
+  display: flex;
+  gap: 2em;
+  padding: 50px;
+  /* border: 1px solid var(--blue); */
+}
+
+.about {
+  height: auto;
+  width: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about p {
+  font-size: larger;
+}
+
+.pfp {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 /* PRELOADER ANIMATION */
 .loading-screen {
   position: fixed;

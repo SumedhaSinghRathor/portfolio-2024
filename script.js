@@ -94,3 +94,22 @@ website_content.addEventListener("mousemove", function (dets) {
     ease: "power4.out",
   });
 });
+
+let anchors = document.getElementsByTagName("a");
+
+for (let a of anchors) {
+  a.addEventListener("mouseenter", function () {
+    gsap.to(cursor, {
+      scale: 1.5,
+      ease: "power4.inOut",
+      borderStyle: "double",
+    });
+  });
+
+  a.addEventListener("mouseleave", function () {
+    gsap.to(cursor, {
+      scale: 1,
+      ease: "power4.inOut",
+    });
+  });
+}
