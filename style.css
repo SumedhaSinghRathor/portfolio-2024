@@ -169,6 +169,50 @@ img {
   align-items: flex-end;
 }
 
+/* SKILLS SECTION */
+#skills {
+  color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+  align-content: center;
+}
+
+.skill {
+  font-size: large;
+  border: 1px solid var(--yellow);
+  width: fit-content;
+  height: fit-content;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 5px;
+}
+
+.certificates {
+  width: 100%;
+  border: 1px solid var(--yellow);
+  text-align: center;
+  padding: 5px;
+  font-size: x-large;
+  border-radius: 20px;
+}
+
+.skill:hover,
+.certificates:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
 /* PRELOADER ANIMATION */
 .loading-screen {
   position: fixed;
