@@ -33,3 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
   animate(document.querySelector(".counter-2"), 6);
   animate(document.querySelector(".counter-1"), 2, 4);
 });
+
+// PreLoader Animation
+let load_animation = gsap.timeline();
+
+load_animation.to(".digit", {
+  top: "-150px",
+  stagger: {
+    amount: 0.25,
+  },
+  delay: 6,
+  duration: 1,
+  ease: "power4.inOut",
+});
+
+load_animation.to(".loading-screen", {
+  height: "0px",
+  duration: 0.3,
+  delay: 0.1,
+  stagger: -0.3,
+});
