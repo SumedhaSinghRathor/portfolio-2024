@@ -29,6 +29,51 @@ body {
   overflow: hidden;
 }
 
+/* NAVBAR */
+#web_logo {
+  width: 5%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: -webkit-fill-available;
+  margin: 20px;
+  background-color: rgba(14, 12, 12, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  z-index: 800;
+  padding: 5px 10px;
+}
+
+.navbar {
+  display: flex;
+  gap: 2.5em;
+}
+
+.navbar a {
+  font-size: 0.8em;
+}
+
+.navbar .link a:hover {
+  color: white;
+}
+
+.link:nth-of-type(3n + 1) a {
+  color: var(--blue);
+}
+
+.link:nth-of-type(3n + 2) a {
+  color: var(--red);
+}
+
+.link:nth-of-type(3n + 0) a {
+  color: var(--yellow);
+}
+
 /* PRELOADER ANIMATION */
 .loading-screen {
   position: fixed;

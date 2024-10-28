@@ -54,6 +54,20 @@ load_animation.to(".loading-screen", {
   stagger: -0.3,
 });
 
+// Navbar Animation
+load_animation.from("#web_logo", {
+  y: -60,
+  opacity: 0,
+  delay: 0.5,
+});
+
+load_animation.from(".link", {
+  y: -60,
+  opacity: 0,
+  delay: 0.1,
+  stagger: -0.1,
+});
+
 // Cursor Animation
 let website_content = document.querySelector(".website-content");
 let cursor = document.querySelector(".cursor");
