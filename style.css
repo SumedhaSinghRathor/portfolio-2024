@@ -148,7 +148,6 @@ img {
   display: flex;
   gap: 2em;
   padding: 50px;
-  /* border: 1px solid var(--blue); */
 }
 
 .about {
@@ -211,6 +210,59 @@ img {
 .certificates:hover {
   background-color: var(--yellow);
   color: var(--black);
+}
+
+/* PROJECTS SECTION */
+#projects {
+  color: var(--black);
+  align-content: center;
+}
+
+.projects {
+  display: inline-flex;
+  overflow: hidden;
+  margin: auto 0;
+  /* transform: translateX(-54.8%); */
+}
+
+.project {
+  width: 275px;
+}
+
+.project-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid var(--blue);
+}
+
+.project-desc {
+  background-color: var(--blue);
+  color: 2px solid var(--black);
+  border: 2px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live {
+  display: flex;
+  gap: 0.5em;
+}
+
+.head,
+.foot {
+  padding: 5px;
+}
+
+.madewith {
+  font-size: 13px;
+  font-style: italic;
 }
 
 /* PRELOADER ANIMATION */

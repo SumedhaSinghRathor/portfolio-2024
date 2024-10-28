@@ -113,3 +113,34 @@ for (let a of anchors) {
     });
   });
 }
+
+// Project Animation
+gsap.to(".projects", {
+  transform: "translateX(-54.8%)",
+  scrollTrigger: {
+    markers: false,
+    trigger: "#projects",
+    scroller: "body",
+    scrub: 2,
+    pin: true,
+    ease: "none",
+  },
+});
+
+window.addEventListener("wheel", function (dets) {
+  if (dets.deltaY <= 0) {
+    gsap.to(".move", {
+      transform: "translateX(-150%)",
+      repeat: -1,
+      duration: 9,
+      ease: "none",
+    });
+  } else {
+    gsap.to(".move", {
+      transform: "translateX(0%)",
+      repeat: -1,
+      duration: 9,
+      ease: "none",
+    });
+  }
+});
