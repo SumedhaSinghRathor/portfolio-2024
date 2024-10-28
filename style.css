@@ -265,6 +265,57 @@ img {
   font-style: italic;
 }
 
+/* CONTACT ME SECTION */
+#contact_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  color: var(--red);
+}
+
+#contact_me a {
+  color: var(--red);
+}
+
+#contact_me .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact_me .contacts i {
+  color: var(--red);
+  background-color: var(--black);
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  padding: 30px;
+  margin: 0 -7px;
+  transition: ease-in 0.1s;
+}
+
+#contact_me .contacts i:hover {
+  background-color: var(--red);
+  color: var(--black);
+  top: -10px;
+}
+
+.downloadResume {
+  font-size: 20px;
+  border: 3px solid var(--red);
+  padding: 15px 55px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  transition: ease-in 0.1s;
+}
+
+.downloadResume:hover {
+  color: var(--black);
+  background-color: var(--red);
+}
+
 /* PRELOADER ANIMATION */
 .loading-screen {
   position: fixed;
