@@ -53,3 +53,16 @@ load_animation.to(".loading-screen", {
   delay: 0.1,
   stagger: -0.3,
 });
+
+// Cursor Animation
+let website_content = document.querySelector(".website-content");
+let cursor = document.querySelector(".cursor");
+
+website_content.addEventListener("mousemove", function (dets) {
+  gsap.to(cursor, {
+    x: dets.x - 25,
+    y: dets.y - 25,
+    duration: 0.7,
+    ease: "power4.out",
+  });
+});
