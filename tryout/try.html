@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      scrollbar-width: none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 100%;
+      height: 100%;
+      background-color: crimson;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box p {
+      font-size: 7em;
+      background-color: rgba(255, 255, 0, 0.6);
+      border-left: 6px solid yellow;
+      border-right: 6px solid yellow;
+    }
+
+    .box p::before,
+    .box p::after {
+      content: "";
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      position: fixed;
+      background-color: yellow;
+      top: 214px;
+    }
+
+    .box p::before {
+      left: 200px;
+    }
+
+    .box p::after {
+      left: 1063px;
+    }
+  </style>
+  <body>
+    <div class="box"><p>Work in Progress</p></div>
+  </body>
+</html>

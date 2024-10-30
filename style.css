@@ -16,6 +16,7 @@ body {
   color: white;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 * {
@@ -38,6 +39,10 @@ a {
 
 img {
   width: 100%;
+}
+
+i {
+  color: var(--black);
 }
 
 .website-content {
