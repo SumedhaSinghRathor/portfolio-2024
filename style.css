@@ -11,7 +11,7 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "Goldman";
+  font-family: "Goldman", sans-serif;
   background-color: var(--black);
   color: white;
   scrollbar-width: none;
