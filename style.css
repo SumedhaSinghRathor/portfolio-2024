@@ -227,7 +227,7 @@ i {
   display: inline-flex;
   overflow: hidden;
   margin: auto 0;
-  /* transform: translateX(-54.8%); */
+  right: 0;
 }
 
 .project {
