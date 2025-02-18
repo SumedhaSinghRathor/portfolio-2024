@@ -227,7 +227,7 @@ i {
   display: inline-flex;
   overflow: hidden;
   margin: auto 0;
-  right: 0;
+  /* transform: translate(-59%); */
 }
 
 .project {
